@@ -1,4 +1,8 @@
 set background=dark
 highlight clear
 highlight Normal
-let g:colors_name="nite"
+if &background == "dark"
+	highlight Error
+else
+	highlight Error
+endif
