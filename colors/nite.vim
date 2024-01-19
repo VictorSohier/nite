@@ -1,6 +1,10 @@
 set background=dark
 highlight clear
-highlight Normal
+
+if exists("syntax_on")
+	syntax reset
+endif
+
 if &background == "dark"
 	highlight Error
 else
